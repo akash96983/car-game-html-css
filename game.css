@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#road{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    height: 100vh;
+    width: 40vw;
+    background-image: url("https://res.cloudinary.com/dtw9umzye/image/upload/v1697522139/image_uxrx7p.png");
+    background-repeat: repeat-y;
+    animation: moveroad 2s infinite linear;
+}
+#car{
+    position: absolute;
+    height: 200px;
+    width: 230px;
+    bottom: 0;
+}
+@keyframes moveroad{
+    100%{background-position: 0 100vh;}
+}
+#whole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

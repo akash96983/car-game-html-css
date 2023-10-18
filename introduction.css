@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#whole{
+    background-image: url("https://res.cloudinary.com/dtw9umzye/image/upload/v1697541050/introduction_car_zlwlwl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; 
+}
+#introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.433);
+    height: 100vh;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: Inknut Antiqua;
+}
+h1{
+    color: rgb(83, 165, 42);
+}
+#box{
+    margin-top: 25px;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.604);
+    border-radius: 20px;
+}
+#start{
+    height: 200px;
+    width: 200px;
+}
+@media (max-width:600px){
+    #box{
+        height: auto;
+        width: 90%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
