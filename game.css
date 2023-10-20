@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: space-evenly;
+}
 #road{
     display: flex;
     justify-content: center;
@@ -14,11 +18,90 @@
     background-repeat: repeat-y;
     animation: moveroad 2s infinite linear;
 }
+#enemycar1{
+    /* display: grid;
+    place-items: center; */
+    position: relative;
+    height: 100px;
+    width: 100px;
+    left: 190px;
+    /* z-index: 1001; */
+    animation: ecar1 infinite linear 6s;
+}
+#enemycar2{
+    /* display: grid; */
+    /* place-items: center; */
+    position: relative;
+    width: 100px;
+    width: 100px;
+    left: 50px;
+    /* z-index: 1001; */
+    animation: ecar2 infinite linear 7s;
+}
+#enemycar3{
+    /* display: grid; */
+    /* place-items: center; */
+    position: relative;
+    width: 100px;
+    width: 100px;
+    left: -120px;
+    /* z-index: 1001; */
+    animation: ecar3 infinite linear 7s;
+}
+#enemycar4{
+    /* display: grid; */
+    /* place-items: center; */
+    position: relative; 
+    width: 100px;
+    width: 100px;
+    left: -260px;
+    /* z-index: 1001; */
+    animation: ecar4 infinite linear 6s;
+}
+@keyframes ecar1{
+    0%{
+        top: -30vh;
+    }
+    100%{
+        top: 65vh;
+    }
+}
+@keyframes ecar2{
+    0%{
+        top: -40vh;
+    }
+    100%{
+        top: 50vh;
+    }
+}
+@keyframes ecar3{
+    0%{
+        top: -50vh;
+    }
+    100%{
+        top: 30vh;
+    }
+}
+@keyframes ecar4{
+    0%{
+        top: -70vh;
+    }
+    100%{
+        top: 7vh;
+    }
+}
+
+
+
 #car{
-    position: absolute;
-    height: 200px;
-    width: 230px;
-    bottom: 0;
+    position: relative;
+    width: 70px;
+    height: 150px;
+    top: 35vh;
+    z-index: 2;
+}
+.carimg{
+    width:70px;
 }
 @keyframes moveroad{
     100%{background-position: 0 100vh;}
